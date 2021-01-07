@@ -1,0 +1,23 @@
+@import "./mixin";
+header {
+  @include flexcenter(column, $background1);
+  color: $white;
+  button {
+    background-color: red;
+    border: none;
+    padding: 10px 10px;
+    color: $white;
+    &:hover {
+      background: $btnHover;
+    }
+    &::after {
+      content: "after content";
+    }
+    &::before {
+      content: "before  content";
+    }
+  }
+}
+.contact {
+  @include flexcenter(column, $background2);
+}
