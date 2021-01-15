@@ -1,4 +1,3 @@
-@import "./mixin";
 header {
   @include flexcenter(column, $background1);
   color: $white;
